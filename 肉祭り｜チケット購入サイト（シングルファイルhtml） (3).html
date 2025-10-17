@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>肉フェス2025-肉欲を満たす｜チケット購入</title>
+  <meta name="description" content="2025/10/17 開催『肉フェス2025-肉欲を満たす』公式チケット購入サイトです。" />
+  <style>
+    :root{
+      --bg1:#1f0f0f;--bg2:#3b1d1d;--accent:#e11d48;--accent-2:#f59e0b;--text:#f8fafc;--muted:#cbd5e1;--card:#0f172a88;--glass:rgba(15,23,42,.5);
+      --ring:#f59e0b55;--ok:#16a34a;--no:#ef4444;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg1),var(--bg2));color:var(--text)}
+    header{position:sticky;top:0;backdrop-filter: blur(6px);background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.1));border-bottom:1px solid #ffffff22;z-index:20}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    .hero{text-align:center;margin:40px auto 20px}
+    .hero h1{font-size:clamp(28px,5vw,56px);margin:0;line-height:1.2}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:linear-gradient(135deg,#ef4444,#f59e0b);color:black;padding:8px 12px;border-radius:999px;font-weight:700;margin-bottom:10px}
+    .date{font-size:14px;color:var(--muted)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid #ffffff22;border-radius:16px;box-shadow:0 10px 30px #0007}
+    .tickets{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}
+    .ticket{position:relative;padding:16px;transition:transform .15s ease, box-shadow .2s}
+    .ticket:hover{transform:translateY(-2px);box-shadow:0 12px 32px #0009}
+    .ticket h3{margin:0 0 6px;font-size:18px}
+    .price{font-size:24px;font-weight:800;color:#fff}
+    .pill{display:inline-block;margin-top:6px;padding:4px 8px;border-radius:999px;background:#0ea5e91a;border:1px solid #7dd3fc33;color:#e2e8f0;font-size:12px}
+    .feat{margin:10px 0 0 18px;color:#e5e7ebc0;font-size:14px}
+    .buy{margin-top:14px;width:100%;padding:10px 12px;border-radius:12px;border:1px solid #ffffff33;background:linear-gradient(135deg,#e11d48,#f59e0b);color:black;font-weight:800;cursor:pointer}
+    .buy:focus{outline:3px solid var(--ring)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .about{padding:16px}
+    .footer{margin:32px 0 18px;text-align:center;color:#94a3b8;font-size:13px}
+
+    /* モーダル */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.6);z-index:50}
+    .modal[open]{display:flex}
+    .dialog{max-width:820px;width:100%;padding:18px}
+
+    /* フォーム */
+    form{display:grid;gap:14px}
+    label{font-weight:600}
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select{width:100%;padding:10px 12px;border-radius:12px;border:1px solid #ffffff22;background:#0b1220;color:#e5e7eb}
+    textarea{min-height:92px}
+    .q{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px;border:1px solid #ffffff1f;border-radius:12px;background:#0b1220}
+    .q span{flex:1}
+    .yn{display:inline-grid;grid-auto-flow:column;gap:8px}
+    .yn button{padding:8px 12px;border-radius:999px;border:1px solid #ffffff22;background:#0b1220;color:#e5e7eb;cursor:pointer}
+    .yn button.active.y{background:rgba(22,163,74,.2);border-color:#16a34a}
+    .yn button.active.n{background:rgba(239,68,68,.18);border-color:#ef4444}
+
+    @media (max-width:900px){.tickets{grid-template-columns:1fr 1fr}}
+    @media (max-width:560px){.tickets{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;align-items:center;gap:14px;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="badge">🍖 肉フェス2025</div>
+        <div class="date">開催日：2025/10/17（予定）</div>
+      </div>
+      <nav style="display:flex;gap:10px">
+        <a href="#tickets" style="color:#e2e8f0">チケット</a>
+        <a href="#about" style="color:#e2e8f0">概要</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>肉フェス2025-肉欲を満たす</h1>
+      <p style="color:#e2e8f0cc;margin:.5rem 0 1rem">「〜旨味の熱気あふれる熱い夜へようこそ〜」<br>参加にはチケットが必要です。<br>会場：東京都中央区湊3-16-6 ZION Office３階</p>
+      <a class="badge" href="#tickets" style="text-decoration:none">今すぐチケットを見る →</a>
+    </section>
+
+    <section id="tickets" class="card" style="padding:16px; margin-top:10px">
+      <h2 style="margin:0 0 8px">チケット</h2>
+      <p style="color:#e2e8f0cc;margin:0 0 10px">希望の席を選び、「購入する」からアンケート（YES/NO 10問）に回答してください。</p>
+      <div class="tickets">
+        <article class="ticket card" data-ticket="プレミア席" data-price="10000">
+          <h3>プレミア席</h3>
+          <div class="price">¥10,000</div>
+          <span class="pill">g自由</span>
+          <ul class="feat">
+            <li>生肉調理</li>
+            <li>焼き方選び放題（レアOK）</li>
+            <li>冷凍なし</li>
+          </ul>
+          <button class="buy">購入する</button>
+        </article>
+        <article class="ticket card" data-ticket="一般席" data-price="5000">
+          <h3>一般席</h3>
+          <div class="price">¥5,000</div>
+          <span class="pill">200gまで</span>
+          <ul class="feat">
+            <li>生肉</li>
+            <li>焼き方選び放題</li>
+          </ul>
+          <button class="buy">購入する</button>
+        </article>
+        <article class="ticket card" data-ticket="貧民席" data-price="3000">
+          <h3>貧民席</h3>
+          <div class="price">¥3,000</div>
+          <span class="pill">200gまで</span>
+          <ul class="feat">
+            <li>選択権なし</li>
+            <li>冷凍肉</li>
+          </ul>
+          <button class="buy">購入する</button>
+        </article>
+        <article class="ticket card" data-ticket="無料席" data-price="0">
+          <h3>無料席</h3>
+          <div class="price">¥0</div>
+          <span class="pill">匂いが嗅げます</span>
+          <ul class="feat">
+            <li>閲覧のみ</li>
+          </ul>
+          <button class="buy">申し込む</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="card about">
+      <h2 style="margin:0 0 8px">イベント概要</h2>
+      <div class="grid-2">
+        <p>『肉フェス2025-肉欲を満たす』は、肉への情熱を分かち合う方のための一夜限りの祭典です。多彩な部位と焼き方で、あなたの“食の欲望”を解放しましょう。</p>
+        <ul style="margin:0 0 0 18px;color:#e5e7ebc0">
+          <li>日付：2025/10/17</li>
+          <li>場所：東京都中央区湊3-16-6 ZION Office３階</li>
+          <li>入場：事前申込制</li>
+        </ul>
+      </div>
+      <p style="margin-top:10px;color:#fecaca">※ アンケートには成人向けの設問が含まれます。参加申込は18歳以上の方に限ります。</p>
+    </section>
+
+    <p class="footer">© 2025 肉フェス実行委員会</p>
+  
+    <!-- 申込モーダル（設問ページ） -->
+    <div class="modal" id="modal" aria-modal="true" role="dialog">
+      <div class="dialog card">
+        <form id="form">
+          <h3 style="margin:0">申込フォーム（YES/NO 10問）</h3>
+          <p style="margin:6px 0 12px;color:#94a3b8">選択したチケット：<strong id="selectedTicket">-</strong>／金額：<strong id="selectedPrice">-</strong></p>
+
+          <div class="grid-2">
+            <div>
+              <label for="name">お名前</label>
+              <input required id="name" name="name" type="text" placeholder="例）肉 太郎" />
+            </div>
+            <div>
+              <label for="email">メールアドレス</label>
+              <input required id="email" name="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="tel">電話番号（任意）</label>
+              <input id="tel" name="tel" type="tel" placeholder="090-1234-5678" />
+            </div>
+            <div>
+              <label for="notes">備考（任意）</label>
+              <input id="notes" name="notes" type="text" placeholder="アレルギー等あれば" />
+            </div>
+          </div>
+
+          <label style="display:flex;align-items:center;gap:8px;margin-top:4px"><input type="checkbox" id="adult" required />私は18歳以上です</label>
+
+          <hr style="border:none;border-top:1px solid #ffffff22" />
+          <p style="margin:0 0 6px">以下の設問に <strong>YES / NO</strong> でお答えください。</p>
+          <div id="questions" style="display:grid;gap:8px"></div>
+
+          <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:10px">
+            <button type="button" id="close" style="padding:10px 12px;border-radius:10px;border:1px solid #ffffff22;background:#0b1220;color:#e5e7eb">閉じる</button>
+            <button type="submit" class="buy" style="width:auto">送信</button>
+          </div>
+          <p style="color:#94a3b8;margin:8px 0 0;font-size:12px">※ 送信すると申し込み内容が指定アドレスへメール送信されます（ブラウザ・メールアプリの設定に依存）。</p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // ===== 設定 =====
+      const EMAIL_TO = "serendipity_eve@msn.com"; // ← 送信先（ご指定済み）
+      const EMAIL_SUBJECT = "【肉フェス2025/10/17】参加申し込み";
+
+      // 設問（YES/NO）
+      const QUESTIONS = [
+        "最近ムラムラしたことはありますか",
+        "意中の相手の誘いを断ったことはありますか",
+        "正直、SEXより食の方が大事だ",
+        "肉欲とは色欲ではなく食欲のことだと思ってる",
+        "肉棒よりウインナーの方が良い",
+        "食事があれば誰の家でも行く",
+        "性欲よりも食欲だ",
+        "ご飯が食べられれば正直誰でもいい",
+        "一晩中SEXしたいと思うことがある",
+        "現在発情期だ"
+      ];
+
+      // 要素参照
+      const modal = document.getElementById('modal');
+      const form = document.getElementById('form');
+      const qWrap = document.getElementById('questions');
+      const selectedTicket = document.getElementById('selectedTicket');
+      const selectedPrice = document.getElementById('selectedPrice');
+      let currentTicket = null;
+
+      // 設問描画
+      function renderQuestions(){
+        qWrap.innerHTML = '';
+        QUESTIONS.forEach((q, idx)=>{
+          const id = 'q_'+idx;
+          const row = document.createElement('div');
+          row.className = 'q';
+          row.innerHTML = `<span>${idx+1}. ${q}</span>
+            <div class="yn" role="group" aria-label="${q}">
+              <button type="button" data-ans="YES" data-id="${id}">YES</button>
+              <button type="button" data-ans="NO" data-id="${id}">NO</button>
+            </div>`;
+          qWrap.appendChild(row);
+        });
+      }
+      renderQuestions();
+
+      // YES/NO 切替（イベント委譲）
+      qWrap.addEventListener('click', (e)=>{
+        const b = e.target.closest('button[data-ans]');
+        if(!b) return;
+        const groupId = b.dataset.id;
+        qWrap.querySelectorAll(`button[data-id='${groupId}']`).forEach(el=>el.classList.remove('active','y','n'));
+        b.classList.add('active', b.dataset.ans === 'YES' ? 'y':'n');
+      });
+
+      // 「購入する」→ モーダル表示
+      document.addEventListener('click', (e)=>{
+        const btn = e.target.closest('.buy');
+        if(!btn) return;
+        const card = btn.closest('.ticket');
+        if(card){
+          currentTicket = { name: card.dataset.ticket, price: Number(card.dataset.price) };
+          selectedTicket.textContent = currentTicket.name;
+          selectedPrice.textContent = currentTicket.price.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });
+          modal.setAttribute('open','');
+          e.preventDefault();
+        }
+      });
+
+      document.getElementById('close').addEventListener('click', ()=>{
+        modal.removeAttribute('open');
+      });
+
+      // 送信（mailto でメール作成 + 控えDL）
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        if(!currentTicket){
+          alert('チケットを選択してください');
+          return;
+        }
+        if(!document.getElementById('adult').checked){
+          alert('18歳以上の確認が必要です');
+          return;
+        }
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const tel = document.getElementById('tel').value.trim();
+        const notes = document.getElementById('notes').value.trim();
+
+        const answers = QUESTIONS.map((q, idx)=>{
+          const id = 'q_'+idx;
+          const yesBtn = qWrap.querySelector(`button[data-id='${id}'][data-ans='YES']`);
+          const noBtn = qWrap.querySelector(`button[data-id='${id}'][data-ans='NO']`);
+          const val = yesBtn.classList.contains('active') ? 'YES' : noBtn.classList.contains('active') ? 'NO' : '';
+          return { q, a: val };
+        });
+        if(answers.some(x=>!x.a)){
+          alert('すべての設問に回答してください');
+          return;
+        }
+
+        const lines = [];
+        lines.push('【肉フェス2025 参加申込】');
+        lines.push('開催日：2025/10/17');
+        lines.push('--- 申込者情報 ---');
+        lines.push(`氏名：${name}`);
+        lines.push(`メール：${email}`);
+        if(tel) lines.push(`電話：${tel}`);
+        if(notes) lines.push(`備考：${notes}`);
+        lines.push('');
+        lines.push('--- チケット ---');
+        lines.push(`種別：${currentTicket.name}`);
+        lines.push(`金額：${currentTicket.price.toLocaleString('ja-JP')}円`);
+        lines.push('');
+        lines.push('--- 設問回答（YES/NO）---');
+        answers.forEach((x,i)=>lines.push(`${i+1}. ${x.q} → ${x.a}`));
+
+        const body = encodeURIComponent(lines.join('\n'));
+        const subject = encodeURIComponent(EMAIL_SUBJECT);
+        const mailto = `mailto:${encodeURIComponent(EMAIL_TO)}?subject=${subject}&body=${body}`;
+        window.location.href = mailto;
+
+        // 控えのtxtをダウンロード
+        const blob = new Blob([lines.join('\n')], {type:'text/plain'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = `nikufes_entry_${Date.now()}.txt`;
+        document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+
+        alert('メール作成画面が開かない場合は、既定のメールアプリ設定をご確認ください。控えテキストをダウンロードしました。');
+        modal.removeAttribute('open');
+      });
+    </script>
+  </main>
+</body>
+</html>
